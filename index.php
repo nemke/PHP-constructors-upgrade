@@ -5,6 +5,7 @@
 		set_time_limit(0);
 		error_reporting(E_ALL);
 		ini_set('display_errors', 'On');
+		ob_implicit_flush(TRUE);
 
 		if (!isset($argv[1]))
 			die('Please enter absolute path');
